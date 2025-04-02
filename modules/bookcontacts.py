@@ -78,22 +78,22 @@ class Record:
 
 class AddressBook(UserDict):
     def add_record(self, record):
-        """Добавляет запись (Record) в адресную книгу"""
+
         self.data[record.name.value] = record
 
     def find(self, name):
-        """Находит запись по имени"""
+
         return self.data.get(name, None)
 
     def delete(self, name):
-        """Удаляет запись по имени"""
+
         if name in self.data:
             del self.data[name]
             return f"Contact {name} deleted"
         return "Contact not found"
 
     def get_upcoming_birthdays(self):
-        """Находит ближайшие дни рождения"""
+
         today = datetime.today().date()
         upcoming_birthdays = []
 

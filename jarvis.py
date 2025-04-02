@@ -1,8 +1,5 @@
 from modules.parse_input import parse_input
-from modules.add_contant import add_contact
-from modules.change_contact import change_contact
-from modules.show_phone import show_phone
-from modules.decocatcher import input_error
+
 from modules.bookcontacts import Record, AddressBook
 
 
